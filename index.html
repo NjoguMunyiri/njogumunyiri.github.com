@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
       .tangerine {
         font-family: 'Tangerine',serif;
@@ -21,58 +24,78 @@
         <h1>NJOGU MUNYIRI</h1>
     </div>
     <img src="pic.jpg" alt="portfolio picture" class="w3-bordered w3-float w3-right w3-small w3-image" style="width:20%">
-
-    <div class="w3-container tangerine">
-      <p><strong>James Njogu Munyiri</strong> is a young Kenyan who has interest in the world of technology specificaly software development.
+    <br><br>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home"><strong>Home</strong></a></li>
+      <li><a data-toggle="tab" href="#portfolio">Portfolio</a></li>
+      <li><a data-toggle="tab" href="#aboutme">About Me</a></li>
+      <li><a data-toggle="tab" href="#contact">Contact Me</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade in active tangerine" id="home">
+        <p><strong>James Njogu Munyiri</strong> is a young Kenyan who has interest in the world of technology specificaly software development.
                   Currently my main objective is to gain extensive experience in the Information Technology field specifically,
                   enhancing my programming skills and experience to achieve an effective output towards the benefit of my clients,
                    society and region at large, with an aim of making a difference in the economy.</p>
-      <hr>
-    </div>
-    <article class="w3-container">
-      <h2><u>Portfolio</u></h2>
-      <h3>Development Capabilities:</h3>
-      <ul>
-        <li>HTML</li>
-        <li>PHP</li>
-        <li>Java script</li>
-        <li>c#</li>
-        <li>C++</li>
-        <li>java</li>
-        <li>mysql</li>
-      </ul>
-      <br>
-      <h3><u>Projects</u></h3>
-      <ul>
-        <li><a href="https://github.com/NjoguMunyiri/halloWorld">https://github.com/NjoguMunyiri/halloWorld</a></li>
-        <li><a href="https://github.com/NjoguMunyiri/practice">https://github.com/NjoguMunyiri/practice</a></li>
-        <li><a href="https://github.com/NjoguMunyiri/sa1">https://github.com/NjoguMunyiri/sa1</a></li>
-        <li><a href="https://github.com/NjoguMunyiri/sa2">https://github.com/NjoguMunyiri/sa2</a></li>
-        <li><a href="https://github.com/NjoguMunyiri/mysite">https://github.com/NjoguMunyiri/mysite</a></li>
-      </ul>
-      <p></p>
-      <hr>
-    </article>
-    <article class="w3-container">
-      <h3><u>About me</u></h3>
-      <div class="cambria">
-        <p><strong>James Njogu Munyiri</strong> is a software deveoloper who's background is a Bachelor of Science in Business and Information Technology,
-          specialising in mobile programming.<br>
-          <strong>Njogu Munyiri</strong> also possess a certified mobile developer in Android certification from I Lab Africa.<br>
-          Currently i am persuing Moringa Prep Part Time class with the aim to advance my programming skills</p>
+                   <hr>
       </div>
-        <hr>
-    </article>
-    <article class="w3-container">
-      <h3><u>Contact Me</u></h3>
-      <div class="cambria w3-ul">
+      <div class="tab-pane fade" id="portfolio">
+        <article class="w3-container">
+          <h2><u>Portfolio</u></h2>
+      <div class="w3-left">
+        <h3>Development Capabilities:</h3>
         <ul>
-          <li>Email:<u>munyiri_james@outlook.com</u></li>
-          <li><a href="https://www.linkedin.com/in/james-munyiri-29b58792/">Linked In</a></li>
-          <li>Number: <u>+254707454022</u></li>
+          <li>HTML</li>
+          <li>PHP</li>
+          <li>Java script</li>
+          <li>c#</li>
+          <li>C++</li>
+          <li>java</li>
+          <li>mysql</li>
+        </ul>
+        <br>
+      </div>
+      <div class="w3-right">
+        <h3><u>Projects</u></h3>
+        <ul>
+          <li><a href="https://github.com/NjoguMunyiri/halloWorld">https://github.com/NjoguMunyiri/halloWorld</a></li>
+          <li><a href="https://github.com/NjoguMunyiri/practice">https://github.com/NjoguMunyiri/practice</a></li>
+          <li><a href="https://github.com/NjoguMunyiri/sa1">https://github.com/NjoguMunyiri/sa1</a></li>
+          <li><a href="https://github.com/NjoguMunyiri/sa2">https://github.com/NjoguMunyiri/sa2</a></li>
+          <li><a href="https://github.com/NjoguMunyiri/mysite">https://github.com/NjoguMunyiri/mysite</a></li>
         </ul>
       </div>
-    </article>
+      <p></p>
+      <hr>
+      </article>
+      </div>
 
+      <div class="tab-pane fade" id="aboutme">
+        <article class="w3-container">
+          <h3><u>About me</u></h3>
+          <div class="cambria">
+            <p><strong>James Njogu Munyiri</strong> is a software deveoloper who's background is a Bachelor of Science in Business and Information Technology,
+              specialising in mobile programming.<br>
+              <strong>Njogu Munyiri</strong> also possess a certified mobile developer in Android certification from I Lab Africa.<br>
+              Currently i am persuing Moringa Prep Part Time class with the aim to advance my programming skills</p>
+          </div>
+          <hr>
+        </article>
+      </div>
+      <div class="tab-pane fade" id="contact">
+        <article class="w3-container">
+          <h3><u>Contact Me</u></h3>
+          <div class="cambria w3-ul">
+            <ul>
+              <li>Email: <a href="mailto:munyiri_james@outlook.com">munyiri_james@outlook.com</a></li>
+              <li><a href="https://www.linkedin.com/in/james-munyiri-29b58792/">Linked In</a></li>
+              <li><a href="https://github.com/NjoguMunyiri">Git hub</a></li>
+              <li>Number: <a href="tel:+254707454022">+254 707 454 022</a></li>
+              <li>P.O BOX 24150-00100 GPO <br> NAIROBI KENYA</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
   </body>
 </html>
